@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+<body class="body">
+    <header class="header">
+        <img src="assets/Logo-1.png" class="header__logo" id="header__logo">
+    </header>
+    <!--Inicio Contenedor General-->
+        <main class="contenedorGeneral">
+            <!--Inicio del subcontenedor1-->
+            <div class="subcontenedor1">
+                <textarea class="subcontenedor1__textArea"
+                 placeholder="Ingrese el texto aquí"
+                 id="subcontenedor1TextArea"></textarea>
+                <div class="subcontenedor1__info">  
+                    <img src="assets/bi_exclamation-circle-fill.png">        
+                    <p class="subcontenedor1__info__texto">
+                        Sólo letras minusculas y sin tildes.
+                    </p>
+                </div>
+                <div class="subcontenedor1__botones">
+                    <button onclick="encriptar();" class="botonEncriptar">
+                        Encriptar
+                    </button>
+                    <button onclick="desencriptar();" class="botonDesencriptar">
+                        Desencriptar
+                    </button>
+                </div>
+                <div class="subcontenedor1__limpieza">
+                    <button onclick="limpiar();" class="botonLimpiar"
+                     id="botonLimpiar">Limpiar</button>
+                </div>
+            </div>
+            <!--Fin del subcontenedor1-->
+            
+            <!--Inicio del subcontenedor2-->
+            <div class="subcontenedor2">
+                <textarea class="subcontenedor2__resultado__textoTrabajado"
+                    id="textoTrabajado" readonly hidden></textarea>
+                <div class="subcontenedor2__resultado">
+                    <img class="muneco" id="muneco" src="assets/Muñeco.png">  
+                    
+                    <p class="subcontenedor2__info"
+                    id="subcontenedor2__info">Ningun texto fue encontrado.</p>
+                    <p class="subcontenedor2__warning"
+                    id="subcontenedor2__warning">
+                    Ingrese el texto que desea encriptar o desencriptar</p>
+                    <button onclick="copiar();" class="botonCopiar"
+                    id="botonCopiar" hidden>Copiar</button>
+                </div>
+            </div>
+            <!--Fin del subcontenedor2-->
+        </main>
+        <!--Fin Contenedor General-->
+    <footer class="footer">Desarrollado por Naxxremis</footer>
+</body>
+<script src="app.js"></script>
+</html>
