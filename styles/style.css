@@ -218,49 +218,4 @@
 }
 
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .contenedorGeneral {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .subcontenedor1 {
-        padding: 5%;
-        width: 100%;
-    }
-
-    .subcontenedor2 {
-        width: 100%;
-        max-width: none;
-    }
-}
-
-@media (max-width: 480px) {
-    .subcontenedor1__textArea {
-        font-size: 18px;
-        height: 250px;
-    }
-
-    .subcontenedor1__info__texto {
-        font-size: 80%;
-    }
-
-    .botonEncriptar,
-    .botonDesencriptar,
-    .botonLimpiar,
-    .botonCopiar {
-        height: 30px;
-        width: 100%;
-        font-size: 90%;
-    }
-
-    .subcontenedor2 {
-        height: auto;
-        margin-top: 10px;
-    }
-
-    .subcontenedor2__resultado__textoTrabajado {
-        font-size: 14px;
-    }
-}
