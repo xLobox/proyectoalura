@@ -218,138 +218,82 @@
 }
 
 
-/* Tablet */
-@media (max-width: 768px){
-        
-    .header__logo{
-        width:14%;
-        height:14%;
-        padding-left: 4%;
-        padding-top: 6%;
-      }
+/*Celular*/
+@media (max-width: 800px){
 
-    .contenedorGeneral {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        margin: 4%;
-        padding-left: 1.5%;
-      }   
+  .header{
+    margin: 5%;
+  }
 
-    .subcontenedor1 {
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        padding: 1%;
-        align-items: center;
-        .subcontenedor1__info{
-            width: 90%; 
-        }
-      }
+  .header__logo{
+    height: 2em;
+    width: auto;
+  }
 
-    
-    .subcontenedor1__info__texto{
-        font-size: 120%;
-        height: 100%;
-        width: 100%;
-      }
+  .contenedorGeneral{
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .subcontenedor1__textArea {
-        font-size: 160%;
-        margin: 5% 10%;
-        width:80%;
-        height: 20%;
-        margin-bottom: 40%
-      }
+  .subcontenedor1{
+    padding: 0;
+  }
 
-    .subcontenedor1__botones{
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        height: 100%;
-        gap: 1%;
-        height: 60px;
-      }
+  .subcontenedor1__botones{
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+  }
+  
+  .botonEncriptar{
+    width: 100%;
+    height: 49%;
+  }
+  
+  .botonDesencriptar{
+    width: 100%;
+    height: 49%;
+  }
 
-    .botonEncriptar {
-        height: 100%;
-        font-size: 120%;
-        font-weight: 600;    
-      }
+  .subcontenedor1__limpieza{
+    padding: 1px;
+    height: 50px;
+  }
 
-    .botonDesencriptar{
-        height: 100%;
-        font-size: 120%;
-        font-weight: 600;
-      }
+  .botonLimpiar{
+    height: 100%;
+    width: 100%;
+  }
 
-    .subcontenedor1__limpieza {
-        width: 90%;
-        height: 60px;
-        font-weight: 600;
-      }
+  .subcontenedor2{
+    margin: 4%;
+    width: 80%;
+    height: 300px;
 
-    .botonLimpiar{
-        height: 100%;
-        font-size: 120%;
-        font-weight: 600;
-    }
-    .subcontenedor2 {
-        height: 300px;
-        width:89%;
-        margin: 2% 5%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-      }
+  }
 
-    .subcontenedor2__resultado__textoTrabajado {
-        justify-content: center;
-        font-size: 150%;
-        margin-top: 4%;
-        text-align: center;
-        align-items: center;
-        background-color: transparent;
-      }
-    
-    .subcontenedor2__resultado {
-        height: 50%;
-        width: 50%;
-      }
+  .subcontenedor2__info{
+    font-size: 150%;
+  }
 
-    .muneco {
-        display: none;
-      }
+  .subcontenedor2__warning{
+    font-size: 100%;
+  }
 
+  .subcontenedor2__resultado__textoTrabajado{
+    margin: 5%;
+    font-size: 107%;
+    font-weight: 550;
+    text-align: center;
+  }
 
-    .subcontenedor2__info {
-       align-items: center; 
-        font-size: 160%;
-        font-weight: 600;
-       
-      }
-      
-      .subcontenedor2__warning {
-        font-weight: 600;
-        font-size: 100%;
-        opacity: 60%;
-        margin-top: 4%;
-      }
-      
-      .botonCopiar {
-        margin-top: 0px;
-        height: 60px;
-        width: 70%;
-        font-weight: 550;
-        margin-bottom: auto;
-        margin-left: 5%;
-      }
-    
-        .footer{
-            margin-top: 8%;
-        }
+  .muneco{
+    display: none;
+    margin: 0;
+  }
 
-    }
-    
+  .botonCopiar{
+    margin: 0;
+  }
 
-
+}
