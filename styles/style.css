@@ -219,8 +219,7 @@
 
 
 /*Tablet*/
-@media (max-width: 1200px){
-   
+@media (max-width: 1000px){
   .header {
      width: auto;
   }
@@ -229,10 +228,15 @@
     width: 12%;
     height: 12%;
   }
+  .contenedorGeneral{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .subcontenedor1{
     align-items: center;
     width: 80%;
+    padding: 0;
   }
 
   .subcontenedor1__textArea{
@@ -242,49 +246,77 @@
     text-align: center;
   }
 
+  .subcontenedor1__info{
+    width: 100%;
+  }
+
+  .subcontenedor1__info__texto{
+    font-size: 20px;
+  }
+
   .subcontenedor1__botones{
     flex-direction: row;
     width: 100%;
+    height: 100px;
     gap: 2%;
   }
 
   .botonEncriptar{
     height: 80%;
+    font-size: 22px;
   }
 
   .botonDesencriptar{
     height: 80%;
+    font-size: 22px;
   }
 
 
   .subcontenedor1__limpieza{
     width: 100%;
+    height: 50px;
   }
 
   .botonLimpiar{
     height: 150%;
+    font-size: 22px;
   }
 
   .subcontenedor2{
     height: 200px;
-    margin-top: 10%;
-    
+    margin-top: 5%;
+    width: 80%;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+
+  .muneco{
+    display: none;
   }
 
 
   .subcontenedor2__resultado__textoTrabajado{
     margin: 2%;
-    
+   font-size: 25px;
+  }
+
+  .subcontenedor2__info{
+    font-size: 30px;
+  }
+
+  .subcontenedor2__warning{
+    font-size: 18px;
   }
 
   .subcontenedor2__resultado{
-    height: 100%;
+    padding: 0;
   }
 
   .botonCopiar{
     font-size: 16px;
     height: 70%;
     width: 65%;
+    margin: 0;
   }
 }
 
