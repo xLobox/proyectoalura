@@ -95,6 +95,7 @@
   background-color: var(--color-secundario);
   color: var(--color-cuaternario);
   font-weight: 550;
+  border-color: var(--color-secundario);
 }
 
 .botonDesencriptar {
@@ -103,6 +104,7 @@
   border-radius: 20px;
   color: var(--color-quinario);
   font-weight: 550;
+  border-color: var(--color-secundario);
 }
 
 .subcontenedor1__limpieza {
@@ -119,6 +121,7 @@
   border-radius: 20px;
   color: var(--color-quinario);
   font-weight: 550;
+  border-color: var(--color-secundario);
 }
 
 .subcontenedor2 {
@@ -291,4 +294,73 @@
     margin: 0;
   }
 
+}
+
+@media (max-width: 1000px){
+   
+  .header {
+     width: auto;
+  }
+
+  .header__logo{
+    width: 12%;
+    height: 12%;
+  }
+
+  .subcontenedor1{
+    align-items: center;
+    width: 80%;
+  }
+
+  .subcontenedor1__textArea{
+    width: 100%;
+    margin-bottom: 50%;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .subcontenedor1__botones{
+    flex-direction: row;
+    width: 100%;
+    gap: 2%;
+  }
+
+  .botonEncriptar{
+    height: 80%;
+  }
+
+  .botonDesencriptar{
+    height: 80%;
+  }
+
+
+  .subcontenedor1__limpieza{
+    width: 100%;
+  }
+
+  .botonLimpiar{
+    height: 150%;
+  }
+
+  .subcontenedor2{
+    height: 200px;
+    margin-top: 10%;
+    
+  }
+
+
+  .subcontenedor2__resultado__textoTrabajado{
+    margin: 2%;
+    
+  }
+
+  .subcontenedor2__resultado{
+    height: 100%;
+  }
+
+  .botonCopiar{
+    font-size: 16px;
+    height: 70%;
+    width: 65%;
+  }
 }
