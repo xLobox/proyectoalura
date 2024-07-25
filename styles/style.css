@@ -318,6 +318,16 @@
     width: 65%;
     margin: 0;
   }
+
+  .footer{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
 }
 
 
