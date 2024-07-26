@@ -219,7 +219,7 @@
 
 
 /*Tablet*/
-@media (max-width: 1400px){
+@media (max-width: 1100px){
   .header {
      width: auto;
   }
